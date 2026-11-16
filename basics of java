@@ -116,6 +116,65 @@ class Sample {
     }
 }
 
+DATATYPES PROGRAM
+
+import java.util.Scanner;
+
+class Operators {
+    public static void main(String args[]) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int pettycash, tiffen, dinner, total_expensive, savings;
+        float average_perday;
+
+        System.out.print("Enter petty cash: ");
+        pettycash = sc.nextInt();
+
+        System.out.print("Enter tiffin expense: ");
+        tiffen = sc.nextInt();
+
+        System.out.print("Enter dinner expense: ");
+        dinner = sc.nextInt();
+
+        total_expensive = tiffen + dinner;
+
+        average_perday = (float) total_expensive / 7;
+
+        savings = pettycash - total_expensive;
+
+        System.out.println("Total Expense: " + total_expensive);
+        System.out.println("Average Expense: " + average_perday);
+        System.out.println("Savings: " + savings);
+
+        sc.close();
+    }
+}
 
 OPERATIONS 
+1.Arithmetic Opertaors
+-> Addition (+)
+-> Subtraction (-)
+-> Multiplication(*)
+-> Division(/)
+-> Modulo Division(%)
+
+OPERATIONS PROGRAM
+import java.util.Scanner;
+public class Bitwise
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        System.out.println("The number is: " + (a & b));
+        System.out.println("The number is: " + (a | b));
+        System.out.println("The number is: " + (a ^ b));
+        System.out.println("The number is: " + (~a));
+        System.out.println("The number is: " + (a << b));
+        System.out.println("The number is: " + (a >> b));
+    }
+}
 
