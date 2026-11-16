@@ -13,3 +13,31 @@ VERSIONS OF JAVA
 ->java 17(sep 2021) - Record,sealed classed,text blocks;spring bott 3/4 baseline
 ->java 21(sep 2023) - virual threads,pattern matching for switch, 
  
+
+METHOD EXPLANATION
+SCANNER METHOD       EXAMPLE       RETURN TYPE
+nextInt()            25             int
+nextLong()           9876543210l    long
+nextFloat()          85.5f          float
+nextDouble()         25000.75       double
+next()               venu           String
+nextLine()           Hello Java     String
+next().charAt(0)     A              char
+nextBoolean()        true           boolean
+
+
+PRIMITIVE DATATYPES
+byte 
+shrot 
+int 
+long 
+float 
+double 
+char
+
+NON-PRIMITIVE DATATYPES
+strinG
+array 
+class 
+objective 
+interface
