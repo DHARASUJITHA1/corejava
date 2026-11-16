@@ -115,3 +115,7 @@ class Sample {
         sc.close();
     }
 }
+
+
+OPERATIONS 
+
