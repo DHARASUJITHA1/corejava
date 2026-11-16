@@ -4,3 +4,12 @@ OAK is a satilite project
 after name changed into star7 demo-1992(a handheld prototype(*7)shows Oak code running on custom hardware)
 after that renamed java-1995("OAK is alredy trademarked;java is publicly announced in may 1995)
 finally in 1996 it name was JDK 1.0 (first official release (january 1996)-java goes mainstream
+Write Once Run Anywhere(WORA)
+VERSIONS OF JAVA
+->java 1.0 (jan 1996) - JVM,core libraries,applets - write once,run anywere.
+->java-5 (sep 2004) - generics,annotations,enums,enhanced for loop.
+->java 8 (mar 2014) - Lambdas,sream API,new date/time API
+->java 11 (sep 2018) - First LTS of the 6-month era;standard HTTP client
+->java 17(sep 2021) - Record,sealed classed,text blocks;spring bott 3/4 baseline
+->java 21(sep 2023) - virual threads,pattern matching for switch, 
+ 
