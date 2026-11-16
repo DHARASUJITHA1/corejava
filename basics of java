@@ -19,6 +19,43 @@ DATATYPES
   String_datatypes - char,string.
   Boolean_datatype - boolean.
 
+1st PROGRAM
+
+import java.util.Scanner;
+class Add {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int age;
+        float marks;
+        char grade;
+        String result;
+        long total_marks;
+        double percentage;
+        System.out.print("Enter age: ");
+        age = sc.nextInt();
+        System.out.print("Enter marks: ");
+        marks = sc.nextFloat();
+        System.out.print("Enter grade: ");
+        grade = sc.next().charAt(0);
+        System.out.print("Enter result: ");
+        result = sc.next();
+        System.out.print("Enter total marks: ");
+        total_marks = sc.nextLong();
+        System.out.print("Enter percentage: ");
+        percentage = sc.nextDouble();
+        System.out.println("\n--- Student Details ---");
+        System.out.println("Age: " + age);
+        System.out.println("Marks: " + marks);
+        System.out.println("Grade: " + grade);
+        System.out.println("Result: " + result);
+        System.out.println("Total Marks: " + total_marks);
+        System.out.println("Percentage: " + percentage);
+        sc.close();
+    }
+}
+
+
+
 METHOD EXPLANATION
 SCANNER METHOD       EXAMPLE       RETURN TYPE
 nextInt()            25             int
@@ -45,3 +82,36 @@ NON-PRIMITIVE DATATYPE:
 - Class
 - Object
 - Interface
+
+2nd PROGRAM
+
+import java.util.Scanner;
+class Sample {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int age;
+        long salary;
+        float average;
+        double total;
+        String employee_name;
+        System.out.println("===== Employee Details =====");
+        System.out.print("Enter age: ");
+        age = sc.nextInt();
+        System.out.print("Enter salary: ");
+        salary = sc.nextLong();
+        System.out.print("Enter average: ");
+        average = sc.nextFloat();
+        System.out.print("Enter total: ");
+        total = sc.nextDouble();
+        sc.nextLine(); 
+        System.out.print("Enter employee name: ");
+        employee_name = sc.nextLine();
+        System.out.println("\n===== Employee Information =====");
+        System.out.println("Age: " + age);
+        System.out.println("Salary: " + salary);
+        System.out.println("Average: " + average);
+        System.out.println("Total: " + total);
+        System.out.println("Employee Name: " + employee_name);
+        sc.close();
+    }
+}
