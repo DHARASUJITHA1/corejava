@@ -5,6 +5,7 @@ after name changed into star7 demo-1992(a handheld prototype(*7)shows Oak code r
 after that renamed java-1995("OAK is alredy trademarked;java is publicly announced in may 1995)
 finally in 1996 it name was JDK 1.0 (first official release (january 1996)-java goes mainstream
 Write Once Run Anywhere(WORA)
+
 VERSIONS OF JAVA
 ->java 1.0 (jan 1996) - JVM,core libraries,applets - write once,run anywere.
 ->java-5 (sep 2004) - generics,annotations,enums,enhanced for loop.
@@ -12,7 +13,11 @@ VERSIONS OF JAVA
 ->java 11 (sep 2018) - First LTS of the 6-month era;standard HTTP client
 ->java 17(sep 2021) - Record,sealed classed,text blocks;spring bott 3/4 baseline
 ->java 21(sep 2023) - virual threads,pattern matching for switch, 
- 
+
+DATATYPES 
+  Numerical_datatypes - Int,float,short,double,long,byte.
+  String_datatypes - char,string.
+  Boolean_datatype - boolean.
 
 METHOD EXPLANATION
 SCANNER METHOD       EXAMPLE       RETURN TYPE
@@ -25,19 +30,18 @@ nextLine()           Hello Java     String
 next().charAt(0)     A              char
 nextBoolean()        true           boolean
 
-
-PRIMITIVE DATATYPES
-byte 
-shrot 
-int 
-long 
-float 
-double 
-char
-
-NON-PRIMITIVE DATATYPES
-strinG
-array 
-class 
-objective 
-interface
+PRIMITIVE DATATYPES:
+- byte
+- short
+- int
+- long
+- float
+- double
+- char
+- boolean
+NON-PRIMITIVE DATATYPE:
+- String
+- Array
+- Class
+- Object
+- Interface
