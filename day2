@@ -19,7 +19,19 @@ CONTROL STATEMENT
   *continue
   *break
   *return
+
+CONDITIONAL STATEMNETS
+SYNTAX -> set of rules & regulations used write program correctly
   
+IF SYNTAX:
+ if condition{
+//block of code
+}
   
-  
-  
+IFELSE SYNTAX:
+if condition{
+     //block of code
+     }
+else {
+     //block of code
+    }
