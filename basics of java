@@ -178,3 +178,15 @@ public class Bitwise
     }
 }
 
+TERNARY PROGRAM
+
+import java.util.Scanner;
+public class Ternary{
+    public static void  main(String[] args){
+        Scanner obj=new Scanner(System.in);
+        System.out.println("enter a number: ");
+        int num=9;
+        String result=(num%2==0) ? "Even" : "Odd";
+        System.out.println(result);
+    }
+}
