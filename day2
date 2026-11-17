@@ -353,3 +353,99 @@ public class Table{
     }
 }
 
+NESTED LOOP
+for(int i=1;i<=10;i++){------>(outer loop)
+    for(int i=1;i<=10;i++){------->(inner loop)
+     //statement2;
+    }
+     //statement1;
+}
+
+PROGRAM - 1
+import java.util.*;
+public class Nestedloop{
+    public static void main(String args[]){
+        for(int i=1;i<=10;i++){
+            for(int j=1;j<=10;j++){
+                System.out.print(j);
+            }
+            System.out.println(" "+i);
+        }
+    }
+}
+
+PROGRAM -2 (table start&end)
+import java.util.*;
+public class Nestedloop{
+    public static void main(String args[]){
+        for(int i=1;i<=10;i++){
+            System.out.println("starting table");
+            for(int j=1;j<=10;j++){
+                System.out.print(j);
+            }
+            System.out.println(" "+i);
+            System.out.println("table is ended");
+        }
+    }
+}
+
+PROGRAM -3 (40tables)
+import java.util.Scanner;
+import java.lang.*;
+public class Fortable {
+    public static void main(String args[]) {
+        int num=10;
+        for(int i=1;i<=40;i++) {
+            System.out.println("Multiplication table of " + i);
+            System.out.println("Started.......");
+            for(int j=1; j<=num; j++) {
+            System.out.println(i + " * " + j + " = " +(i * j));
+            }
+            System.out.println("Ended.......");
+        }
+        }
+    }
+
+PROGRAM -4 (40 tables even&odd)
+import java.util.Scanner;
+class Evenodd {
+    public static void main(String args[]) {
+        int num = 10;
+        System.out.println("EVEN TABLES");
+        for (int i = 1; i <= 40; i++) {
+            if (i % 2 == 0) {
+                for (int j = 1; j <= num; j++) {
+                    System.out.println(i + " * " + j + " = " + (i * j));
+                }
+                System.out.println();
+            }
+        }
+        System.out.println("ODD TABLES");
+        for (int i = 1; i <= 40; i++) {
+            if (i % 2 != 0) {
+                for (int j = 1; j <= num; j++) {
+                    System.out.println(i + " * " + j + " = " + (i * j));
+                }
+                System.out.println();
+            }
+        }
+    }
+}
+
+PROGRAM -5 (stars)
+import java.util.Scanner;
+public class Nestedstar{
+    public static void main(String args[]){
+        int n=0;
+        for(int i=1;i<=5;i++){
+            for(int j=1;j<=5;j++){
+                System.out.print(" * ");
+                n++;
+            }
+            System.out.println(" ");
+        }
+        System.out.println(n);
+
+    }
+}
+
