@@ -1,0 +1,25 @@
+CONTROL STATEMENT
+  ->conditional statements
+  ->looping statements
+  ->jumping statements
+  
+  1.conditional statement
+  *if
+  *ifelse
+  *elseif ladder
+  *nested if
+  *switch
+
+  2.looping statements
+  *for
+  *while
+  *do while
+
+  3.jumping statements
+  *continue
+  *break
+  *return
+  
+  
+  
+  
