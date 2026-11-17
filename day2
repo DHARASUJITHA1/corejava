@@ -27,6 +27,22 @@ IF SYNTAX:
  if condition{
 //block of code
 }
+
+IF PROGRAM
+import java.util.Scanner;
+public class If{
+    public static void main(String[] args){
+        Scanner obj = new Scanner(System.in);
+        System.out.println("enter a number");
+        int a=obj.nextInt();
+        int b=obj.nextInt();
+        if (a<=b){
+            System.out.print("Condition is true");
+            
+        }
+        
+    }
+}
   
 IFELSE SYNTAX:
 if condition{
@@ -35,3 +51,72 @@ if condition{
 else {
      //block of code
     }
+
+PROGRAM
+import java.util.Scanner;
+public class If{
+    public static void main(String[] args){
+        Scanner obj = new Scanner(System.in);
+        System.out.println("enter a number");
+        int a=obj.nextInt();
+        int b=obj.nextInt();
+        if (a<=b){
+            System.out.print("Condition is true");
+            
+        }
+        else {
+            System.out.println("condition is false");
+        }
+    }
+}
+
+ELSEIF LADDER
+SYNTAX:
+if condition1{
+       //block of code
+      }
+else if condition2{
+      //block of code
+     }
+else if condition3{
+      //block of code
+     }
+else if condition4{
+      //block of code
+     }
+else{
+      //block of code
+     }
+
+PROGRAM
+import java.util.Scanner;
+public class Ifelseladder{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter a marks");
+        int marks=sc.nextInt();
+        if (marks > 80){
+             System.out.println("distinction");
+        }
+        else if(marks<80 &&  marks>=60){
+            System.out.println("first class");
+        }
+        else if(marks<60 && marks>=50){
+            System.out.println("second class");
+        }
+        else if(marks< 50 && marks >=35){
+            System.out.println("third class");
+        }
+        else{
+            System.out.println("fail");
+        }
+    }
+}
+
+NESTEDIF
+SYNTAX:
+if condition1{
+     if condition2{
+       //block of code statement2
+      }
+    //block of code statement1
