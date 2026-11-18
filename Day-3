@@ -1,0 +1,319 @@
+Arrays
+--> program -1
+import java.util.Scanner;
+class Array
+{
+    public static void main(String args[])
+    {
+        int arr[]={10,20,30,40,50};
+        int sum=0;
+        int count=0;
+        for(int i=0;i<arr.length;i++)
+        {
+            sum+=arr[i];
+            System.out.println(arr[i]);
+            count++;
+        }
+        System.out.println(sum);
+        System.out.println(count);
+    }
+}
+
+
+-->Program
+import java.util.Scanner;
+class Array1
+{
+    public static void main(String args[])
+    {
+        int a[]={1,2,3,4,5};
+        int venu=a[0];
+        for(int i=0;i<a.length;i++)
+        {
+            if(a[i]>venu)
+            {
+                venu=a[i];
+            }
+        }
+        System.out.println(venu);
+    }
+}
+
+--> Program
+import java.util.Scanner;
+class Array2
+
+{
+    public static void main(String args[])
+    {
+        int a[]={1,2,3,4,5};
+        int venu=a[0];
+        int second=a[1];
+        for(int i=0;i<a.length;i++)
+        {
+            if(a[i]<venu)
+            {
+                second=venu;
+                venu=a[i];
+            }
+            else if(a[i]<second && second!=venu)
+            {
+                second=a[i];
+            }
+        }
+        System.out.println(second);
+    }
+}
+
+-->Program(Largest number)
+import java.util.Scanner;
+class Secondlargest
+{
+    public static void main(String args[])
+    {
+        int a[]={1,2,3,4,5};
+        int venu=a[0];
+        int second=a[0];
+        for(int i=0;i<a.length;i++)
+        {
+            if(a[i]>venu)
+            {
+                second=venu;
+                venu=a[i];
+            }
+            else if(a[i]>second && second!=venu)
+            {
+                second=a[i];
+            }
+        }
+        System.out.println(second);
+    }
+}
+
+--> Program(Smallest number)
+import java.util.Scanner;
+class Smallest
+{
+    public static void main(String args[])
+    {
+        int a[]={1,2,3,4,5};
+        int venu=a[0];
+        int second=a[0];
+        for(int i=0;i<a.length;i++)
+        {
+            if(a[i]<venu)
+            {
+                second=venu;
+                venu=a[i];
+            }
+            else if(a[i]<second && second!=venu)
+            {
+                second=a[i];
+            }
+        }
+        System.out.println(second);
+    }
+}
+
+--> Program(Swapping)
+import java.util.Scanner;
+class Swapping {
+    public static void main(String[] args) {
+       int a[]={1,2,3,4,5,6};
+       int left=0;
+       int right=a.length-1;
+       while(left<right)
+       {
+        int temp=a[left];
+        a[left]=a[right];
+        a[right]=temp;
+        left++;
+        right--;
+       }
+       for(int i=0;i<=a.length-1;i++)
+       {
+        System.out.print(a[i]);
+       }
+    }
+}
+
+-->Program(2D Array)
+import java.util.Scanner;
+class Array2d
+{
+    public static void main(String args[])
+    {
+        int a[][]=new int[3][3];
+        int sum=0;
+        a[0][0]=10;
+        a[0][1]=20;
+        a[0][2]=30;
+        a[1][0]=40;
+        a[1][1]=50;
+        a[1][2]=60;
+        a[2][0]=70;
+        a[2][1]=80;
+        a[2][2]=90;
+        for(int row=0;row<=a.length-1;row++)
+        {
+            for(int col=0;col<=a.length-1;col++)
+            {
+                System.out.println(a[row][col]);
+                sum+=a[row][col];
+            }
+        }
+        System.out.println("Sum: " + sum);
+    }
+}
+
+
+--> Program(3D Array)
+import java.util.Scanner;
+class Array3d
+{
+    public static void main(String args[])
+    {
+        int a[][][]=new int[3][3][3];
+        int sum=0;
+        a[0][0][0]=10;
+        a[0][0][1]=20;
+        a[0][0][2]=30;
+        a[0][1][0]=40;
+        a[0][1][1]=50;
+        a[0][1][2]=60;
+        a[0][2][0]=70;
+        a[0][2][1]=80;
+        a[0][2][2]=100;
+        a[1][0][0]=12;
+        a[1][0][1]=203;
+        a[1][0][2]=302;
+        a[1][1][0]=403;
+        a[1][1][1]=503;
+        a[1][1][2]=603;
+        a[1][2][0]=703;
+        a[1][2][1]=803;
+        a[1][2][2]=903;
+        a[2][0][0]=190;
+        a[2][0][1]=200;
+        a[2][0][2]=300;
+        a[2][1][0]=400;
+        a[2][1][1]=500;
+        a[2][1][2]=600;
+        a[2][2][0]=700;
+        a[2][2][1]=800;
+        a[2][2][2]=900;
+        for(int row=0;row<=a.length-1;row++)
+        {
+            for(int col=0;col<=a.length-1;col++)
+            {
+                for(int high=0;high<=a.length-1;high++)
+                {
+                    System.out.println(a[row][col][high]);
+                    sum+=a[row][col][high];
+                }
+            }
+        }
+        System.out.println("Sum: " + sum);
+
+    }
+}
+
+-->Program (Right Rotation)
+import java.util.Scanner;;
+public class Rightrotation {
+    public static void main(String args[])
+    {
+        int a[]={1,2,3,4,5};
+        int temp=a[0];
+        for(int i=0;i<a.length-1;i++)
+        {
+            a[i]=a[i+1];
+        }
+        a[a.length-1]=temp;
+        for(int i=0;i<a.length;i++)
+        {
+            System.out.print(a[i]+" ");
+        }
+    }
+}
+
+STRINGS
+-->* Methods of Strings
+1. length()
+-> Returns the number of characters in a String.
+
+'''java
+String s="Java";
+System.out.println(s.length());
+
+output:'4'
+
+2. charAt()
+->Returns the character at a specified index.
+'''java
+String s="Java";
+System.out.println(s.charAt());
+
+Output: 'a'
+
+3. toUpperCase()
+Converts all characters into uppercase.
+'''java
+String s="java";
+System.out.println(s.toUpperCase());
+
+Output: 'JAVA'
+
+4. toLowerCase()
+Converts all characters into Lowercase.
+'''java
+String s="JAVA";
+System.out.ptintln(s.toLowerCase());
+
+Output: 'java'
+
+5.equals()
+compares two strings based on their content
+'''java
+String a="Java";
+String b="Java";
+System.out.println(a.equlas(b));
+
+Output: 'true'
+
+6. equalsIgnoreCase()
+Compares Strings without considering uppercase or lowercase differences
+'''java
+String a="JAVA";
+String b="java";
+System.out.println(a.equalsIgnoreCase(b));
+
+Output: 'true'
+
+7. contains()
+checks whether a string contains a particular sequence of characters.
+'''java
+String s="Java Programming";
+System.out.println(s.conatins("Java"));
+
+Output: 'true'
+
+8.substring()
+Extracts a part of a string.
+'''java
+String s="Programming";
+System.out.println(s.substring(0,4));
+
+Output: 'Prog'
+
+9.replace()
+Replaces characters or character sequences.
+'''java
+String s="Java";
+System.out.println(s.replace('a','o'));
+
+Output: 'Jovo'
+
+10.trim()
+Removes leading and trailing spaces.
+'''java
