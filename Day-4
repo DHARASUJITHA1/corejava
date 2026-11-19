@@ -1,0 +1,51 @@
+JAVA STRING
+Fundamentals ->methods-->StringBulder->Coding problems->regex-.interviews
+
+Core idea
+->text if stored as a sequence of character, index from 0
+
+Java
+->String,StringBuilder,StringBuffer,Pattern and Matcher
+patterns
+->two pointers->frequency map->sliding window->regex.
+
+INSPECT 
+1.length() -->obj.length()
+2.charAt() -->obj.charAt()
+3.isEmpty() -->obj.isEmpty()
+4.isBlank() -->obj.isBlank()
+
+EXTRACT BY INDEX:-
+1.subString() -->str.SubString(0,4)
+2.indexOf     -->str.indexOf("v")
+
+COMPARE
+1.equals() -->str.equals(str1)("suji")
+2.compareTo() -->str.Compare(str1)("sujitha")
+
+FIND
+1.contains() -->str.contains("@")
+2.StartsWith() -->str.StartsWith("suji")
+3.endsWith() -->str.end/with("  com")
+
+TRANSFORM
+1.Trim() -->str.trim()
+2.Strip() -->str.
+3.Concate() -->str.Concate("hello")str2
+4.repeat() -->str.repeat(3)
+
+REPLACE
+ex:-str="suji"
+1.replace() -->replace('j','g')
+2.replaceAll() -->
+3.replaceFirst  -->
+
+split() -->str.Split(",")
+join() -->str.join("1",str1)
+
+toCharArray() -->char[] suji = "suji"toCharArray();
+
+1.matches() -->str.match([0-9])
+2.formatted() -->format(Hi,suji is scored 90%)
+
+STRINGBUILDER
