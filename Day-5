@@ -20,7 +20,7 @@ class A
 {
   //block of code
 }
-class B extends class A
+class B extends A
 {
   //block of code
 }
@@ -32,7 +32,7 @@ class Main
   }
 }
 
-2.MULTILEVEL INHERITANCE
+2.MULTILEVEL INTERFACE
 class A
 {
   //block of code
@@ -53,12 +53,12 @@ class Main
   }
 }
 
-3.MULTIPLE INHERUTANCE
-class A
+3.MULTIPLE INHERITANCE
+Interface A
 {
   //block of code
 }
-class B extends A
+Interface B
 {
   //block of code
 }
@@ -83,7 +83,7 @@ class B extends A
 {
   //block of code
 }
-class C implements A
+class c extends A
 {
   //block of code
 }
@@ -95,4 +95,363 @@ class Main
   }
 }
 
-5.HYBRID INHERITANCE
+SINGLE INHERITANCE
+-->PROGRAM 1
+import java.util.*;
+class A
+{
+    int area(int a,int b)
+    {
+        return a*b;
+    }
+}
+class B extends A
+{
+    int areaofsquare(int a)
+    {
+        return a*a;
+    }
+}
+class Single
+{
+    public static void main(String args[])
+    {
+        B obj=new B();
+        System.out.println(obj.area(20,30));
+        System.out.println(obj.areaofsquare(4));
+    }
+}
+
+-->PROGRAM 2
+import java.util.*;
+class A
+{
+    int add(int a,int b)
+    {
+        return a+b;
+    }
+}
+class B extends A
+{
+    int sub(int a,int b)
+    {
+        return a-b;
+    }
+}
+class Single1
+{
+    public static void main(String args[])
+    {
+        B obj=new B();
+        System.out.println(obj.add(20,30));
+        System.out.println(obj.sub(20,30));
+    }
+}
+
+MULTILEVEL INHERITANCE
+-->PROGRAM 1
+
+class venu{
+    void fun(){
+        System.out.println("Hello fun methods");
+    }
+}
+class varu extends venu{
+    void monkey(){
+        System.out.println("hello Mits ");
+    }
+}
+class ven extends varu{
+    public void display(){
+        System.out.println("Hello world");
+    }
+    public void msg(){
+        System.out.println("hello vamshi");
+    }
+}
+class Multilevel{
+    public static void main(String[] args) {
+        ven obj= new ven();
+        obj.fun();
+        obj.monkey();
+        obj.display();
+        obj.msg();
+    }
+}
+
+-->PROGRAM 2
+import java.util.*;
+class A
+{
+    int mul(int a,int b)
+    {
+        return a*b;
+    }
+}
+class B extends A
+{
+    int div(int a,int b)
+    {
+        return a/b;
+    }
+}
+class C extends B
+{
+    int mod(int a,int b)
+    {
+        return a%b;
+    }
+}
+class Multilevel1
+{
+    public static void main(String args[])
+    {
+        C obj=new C();
+        System.out.println(obj.mul(20,30));
+        System.out.println(obj.div(20,30));
+        System.out.println(obj.mod(20,30));
+    }
+}
+
+MULTIPLE INHERITANCE
+
+interface venu{
+    void display();
+}
+interface vamshi{
+    void msg();
+}
+class ven implements venu,vamshi{
+    public void display(){
+        System.out.println("Hello world");
+    }
+    public void msg(){
+        System.out.println("hello vamshi");
+    }
+}
+class Multiple{
+    public static void main(String[] args) {
+        ven obj= new ven();
+        obj.display();
+        obj.msg();
+    }
+}
+
+-->PROGRAM 2
+
+interface venu{
+    void add(int a,int b);
+}
+interface vamshi{
+    void sub(int a,int b);
+}
+class ven implements venu,vamshi{
+    public void add(int a,int b){
+        System.out.println("Addition is: "+(a+b));
+    }
+    public void sub(int a,int b){ 
+        System.out.println("Subtraction is: "+(a-b));
+    }
+}
+class Multiple1{
+    public static void main(String[] args) {
+        ven obj= new ven();
+        obj.add(20,30);
+        obj.sub(30,20);
+    }
+}
+
+HYBRID
+-->PROGRAM
+
+interface pet{
+    void play();
+}
+class animal{
+    void eat(){
+        System.out.println("animal is eating");
+    }
+}
+class dog extends animal implements pet{
+    public void play(){
+        System.out.println("animal is playing games");
+    }
+    void mam(){
+        System.out.println("mam is playing with animals");
+    }
+
+}
+class cat extends animal implements pet{
+    public void play(){
+        System.out.println("hello world");
+    }
+    void men(){
+        System.out.println("men is playing game");
+    }
+}
+class Hybrid{
+    public static void main(String args[]){
+        dog obj = new dog();
+        cat obj1 = new cat();
+        obj.eat();
+        obj.mam();
+        obj.play();
+        obj1.eat();
+        obj1.men();
+        obj1.play();
+    }
+}
+
+HIERARICHAL
+-->PROGRAM
+
+class A{
+    void display(){
+        System.out.println("enter a value");
+    }
+}
+class B extends A{
+    void mam(){
+        System.out.println("enter b value");
+    }
+}
+class C extends A{
+    void vamshi(){
+        System.out.println("enter a vamshi");
+    }
+}
+class Hirerachal {
+    public static void main(String[]args){
+        B sc = new B();
+        C s = new C();
+        sc.mam();
+        sc.display();
+        s.vamshi();
+        s.display();
+    }
+}
+
+
+METHOD OVERLOADING
+-->PROGRAM
+class Overloading{
+    void add(int a,int b){
+        System.out.println(a+b);
+    }
+    void add(int a,int b,int c){
+        System.out.println(a+b+c);
+    }
+    public static void main(String args[]){
+        Overloading obj = new Overloading();
+        obj.add(10,20);
+        obj.add(10,20,30);
+    }
+}
+
+METHOD OVERRIDING
+-->PROGRAM
+class Animal {
+
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+
+    @Override
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+class Cat extends Animal {
+
+    @Override
+    void sound() {
+        System.out.println("Cat meows");
+    }
+}
+
+class Overriding {
+    public static void main(String[] args) {
+
+        Animal a;
+
+        a = new Dog();
+        a.sound();
+
+        a = new Cat();
+        a.sound();
+
+        a = new Animal();
+        a.sound();
+    }
+}
+
+
+ABSTRACTION
+-->PROGRAM
+abstract class ATM {
+
+    abstract void withdraw();
+
+    void checkBalance() {
+        System.out.println("Checking account balance...");
+    }
+}
+class SBI extends ATM {
+    @Override
+    void withdraw() {
+        System.out.println("Money withdrawn from SBI ATM");
+    }
+}
+class Abstraction {
+    public static void main(String[] args) {
+        SBI obj = new SBI();
+        obj.withdraw();
+        obj.checkBalance();
+    }
+}
+
+
+ENCAPSULATION
+-->PROGRAM
+class BankAccount {
+
+    private double balance = 5000;
+
+    public void deposit(double amount) {
+
+        if (amount > 0) {
+            balance = balance + amount;
+            System.out.println("Amount deposited successfully");
+        }
+    }
+
+    public void withdraw(double amount) {
+
+        if (amount > 0 && amount <= balance) {
+            balance = balance - amount;
+            System.out.println("Amount withdrawn successfully");
+        } else {
+            System.out.println("Insufficient balance");
+        }
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+}
+
+class Encapsulation {
+    public static void main(String[] args) {
+
+        BankAccount account = new BankAccount();
+
+        account.deposit(2000);
+        account.withdraw(1000);
+
+        System.out.println("Current Balance: " + account.getBalance());
+    }
+}
